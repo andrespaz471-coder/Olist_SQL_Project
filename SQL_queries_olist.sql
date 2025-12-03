@@ -156,8 +156,7 @@ where p.product_weight_g > (
 order by pcn.product_category_name desc;
 
 
--- 15) Listar los clientes cuyo ticket promedio (total gastado / cantidad de pedidos)
--- es mayor al ticket promedio general de todos los clientes.
+-- 15) Listar los clientes cuyo ticket promedio (total gastado / cantidad de pedidos) es mayor al ticket promedio general de todos los clientes.
 select
 	t.customer_id,
 	t.ticket_promedio
@@ -191,16 +190,6 @@ where t.ticket_promedio > (
 		group by c.customer_id
 		)t2
 );
-
-
-
-
-
-
-
-
-
-
 
 
 
